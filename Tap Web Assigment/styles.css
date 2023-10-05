@@ -1,0 +1,152 @@
+body,
+h1,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    background: none;
+}
+
+.header-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header-links li.active a {
+    color: #d1884f;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+h3 {
+    color: #3BBADB;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.see-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #3BBADB;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 70%;
+    border-radius: 0 0 0 250px;
+    position: relative;
+    z-index: 1;
+}
+
+.shadow-box {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #3BBADB;
+    opacity: 0.3;
+    left: 7%;
+    bottom: 10px;
+    z-index: -1;
+    border-radius: 0 0 0 250px;
+}
+
+.light-blue-text {
+    color: #008AAA;
+}
+
+.gold-text {
+    color: #d1884f;
+}
+
+.buttons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hire-me-btn,
+.see-project-btn {
+    display: inline-block;
+    padding: 7px 15px;
+    background-color: #008AAA;
+    color: #fff;
+    border: none;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.see-project-btn {
+    background-color: #fff;
+    color: #028aa9;
+    border: 2px solid #028aa9;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
